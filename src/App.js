@@ -1,6 +1,10 @@
 import './App.css';
 
 function App() {
+  const WORD_LENGTH = 5
+const FLIP_ANIMATION_DURATION = 500
+const DANCE_ANIMATION_DURATION = 500
+
   const tiles = []
   for (let i = 0; i < 30; ++i) {
     tiles.push(<div className='tile' />)
@@ -19,6 +23,8 @@ function App() {
   for (let i = 19; i < 26; ++i) {
     lastRow.push(<button className='key' data-key={keys[i]}>{keys[i]}</button>)
   }
+
+
 
   return (
     <>
